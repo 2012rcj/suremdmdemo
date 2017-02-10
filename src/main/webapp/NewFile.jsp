@@ -192,7 +192,7 @@ try {
 			while (r1.next()) {
      %>
      <TR>
-        <td><a href="Store_Detail.jsp?Value1=<%session.setAttribute("str1",r1.getString(1));%>" style="color: cyan"><%=r1.getString(1)%></a></td>
+        <td><a href="Store_Detail.jsp?Value1=<%=r1.getString(1)%>" style="color: cyan"><%=r1.getString(1)%></a></td>
       
         <td><%=r1.getString(2)%></td>
         <td><input type="file"  custom-on-change="vm.image" /></td>

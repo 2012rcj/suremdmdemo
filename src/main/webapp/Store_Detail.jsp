@@ -10,12 +10,12 @@
  session.setAttribute("str","123456");
   
  String str3=(String)session.getAttribute("str");
- out.println(str3);
+ 
 //session.setAttribute("str2",Store_Id );
 //String Str3=(String)session.getAttribute("str2"); 
 JSONArray jArray1 = new JSONArray();
 JSONObject jObj = new JSONObject();
 jObj.put("Store_Id",str3);
-
+out.println(jObj);
 
 %>

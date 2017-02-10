@@ -16,6 +16,6 @@
 JSONArray jArray1 = new JSONArray();
 JSONObject jObj = new JSONObject();
 jObj.put("Store_Id",str3);
-out.println(jObj);
+
 
 %>

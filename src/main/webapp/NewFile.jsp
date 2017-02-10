@@ -192,7 +192,7 @@ try {
 			while (r1.next()) {
      %>
      <TR>
-        <td><a href="NewFile.jsp?Value1=<%session.setAttribute("str2",r1.getString(1));%>" style="color: cyan"><%=r1.getString(1)%></a></td>
+        <td><a href="Store_Detail.jsp?Value1=<%=r1.getString(1)%>" style="color: cyan"><%=r1.getString(1)%></a></td>
       
         <td><%=r1.getString(2)%></td>
         <td><input type="file"  custom-on-change="vm.image" /></td>
@@ -207,21 +207,6 @@ catch(Exception e)
 {
 	out.println(e);
 }
-
-%>
-	<%
-
-//String Sto=request.getParameter("Value1");
- //session.setAttribute("str",Sto);
-  
- String str3=(String)session.getAttribute("str2");
- //out.println(str3);
-//session.setAttribute("str2",Store_Id );
-//String Str3=(String)session.getAttribute("str2"); 
-JSONArray jArray1 = new JSONArray();
-JSONObject jObj = new JSONObject();
-jObj.put("Store_Id",str3);
-out.println(jObj);
 
 %>
 
